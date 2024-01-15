@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .container {
+      width: 50%;
+      margin: auto;
+      text-align: left;  /* Align text to the left */
+      padding-top: 30px;
+    }
+
+    img.logo {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    h2 {
+      display: inline-block;
+      text-align: left;
+    }
+
+    h3 {
+      text-align: left;
+    }
+
+    form {
+      text-align: left;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      border: none;
+      border-bottom: 1px solid #ccc;
+      background-color: transparent;
+      outline: none;
+      width: 100%;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-bottom: 2px solid #0000FF;
+    }
+
+    input[type="submit"] {
+      background-color: #87CEEB;
+      color: white;
+      padding: 10px 15px;  /* Slightly smaller padding */
+      margin: 8px 0;
+      border: none;
+      border-radius: 10px;  /* Rounded corners */
+      cursor: pointer;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #7BBCE0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0000FF;
+    }
+
+    /* Media query for small screens */
+    @media screen and (max-width: 600px) {
+      h2 {
+        display: none;  /* Hide the name on smaller screens */
+      }
+
+      input[type="submit"] {
+        padding: 8px 12px;  /* Smaller padding */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <img src="apple-touch-icon.png" alt="Logo" class="logo">
+    <h2>CodeHeal</h2>
+    <h3>Sign In</h3>
+    <form action="/action_page.php">
+      <label for="email">Email</label><br>
+      <input type="text" id="email" name="email" required><br><br>
+      <label for="password">Password</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+      <input type="submit" value="Sign In">
+    </form>
+    <p>By clicking "Sign in," you agree to our <a href="#">Terms and Conditions</a>.</p>
+    <a href="#">Forgot your password?</a>
+  </div>
+
+</body>
+
+</html>
